@@ -1,1 +1,110 @@
-Hello World!
+<!doctype html>
+<html>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Palatino", "Georgia", serif;
+  color: #0b0c0c;
+  margin: 32px;
+}
+
+h1 {
+  font-weight: lighter;
+  color: #444;
+  word-spacing: 0.2em;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #444;
+}
+
+h1 a:hover {
+  color: #3F9DD7;
+}
+
+.fontdiff {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-top: 25px;
+}
+
+.example {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 100%;
+  font-size: 200px;
+}
+
+.first {
+  color: #2FAfff;
+}
+
+.second {
+  color: #909090;
+  opacity: 0.75;
+  z-index: 10;
+}
+
+.example .segment {
+  width: 200px;
+  display: inline;
+}
+
+.example .segment span {
+  display: inline;
+}
+
+.baskerville { font-family: "Baskerville"; }
+.times-new-roman { font-family: "Times New Roman"; }
+
+.annotation {
+  border-right: 1px dotted #444;
+  color: #0b0c0c;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90px;
+  height: 200px;
+  vertical-align: bottom;
+}
+
+.annotation span {
+  position: absolute;
+  bottom: 0;
+}
+
+</style>
+<body>
+<h1>
+  <a href="https://en.wikipedia.org/wiki/Baskerville">Baskerville</a>
+  vs
+  <a href="https://en.wikipedia.org/wiki/Times_New_Roman">Times New Roman</a>
+</h1>
+
+<div class="fontdiff">
+  <div class="baskerville first example">
+    <p class="text">
+      <span class="segment"><span class="upper S">S</span><span class="lower a">a</span><span class="lower g">g</span></span>
+      <span class="segment"><span class="lower e">e</span><span class="lower b">b</span><span class="lower i">i</span></span>
+      <span class="segment"><span class="upper C">C</span><span class="upper G">G</span><span class="upper A">A</span></span>
+    </p>
+  </div>
+  <div class="times-new-roman second example">
+    <p class="text">
+      <span class="segment"><span class="upper S">S<span class="annotation top right"><span>Time's serifs are sharp, and long in length.</span></span></span><span class="lower a">a</span><span class="lower g">g</span></span>
+      <span class="segment"><span class="lower e">e</span><span class="lower b">b</span><span class="lower i">i</span></span>
+      <span class="segment"><span class="upper C">C</span><span class="upper G">G</span><span class="upper A">A</span></span>
+    </p>
+  </div>
+</div>
+</body>
+</html>
