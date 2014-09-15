@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+<meta charset="utf-8">
 <style>
 * {
   margin: 0;
@@ -66,7 +67,6 @@ h1 a:hover {
 .times-new-roman { font-family: "Times New Roman"; }
 
 .annotation {
-  border-right: 1px dotted #444;
   color: #0b0c0c;
   font-size: 12px;
   position: absolute;
@@ -80,6 +80,34 @@ h1 a:hover {
 .annotation span {
   position: absolute;
   bottom: 0;
+}
+
+.annotation.right {
+  border-right: 1px dotted #444;
+}
+
+.annotation.right span {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.annotation.left {
+  border-left: 1px dotted #444;
+}
+
+.annotation.left span {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.annotation.bottom {
+  height: 80px;
+}
+
+.g .annotation {
+  left: 216px;
+  width: 100px;
+  height: 70px;
 }
 
 </style>
@@ -100,7 +128,7 @@ h1 a:hover {
   </div>
   <div class="times-new-roman second example">
     <p class="text">
-      <span class="segment"><span class="upper S">S<span class="annotation top right"><span>Time's serifs are sharp, and long in length.</span></span></span><span class="lower a">a</span><span class="lower g">g</span></span>
+      <span class="segment"><span class="upper S">S<span class="annotation top right"><span>Time's serifs are sharp, and long in length.</span></span></span><span class="lower a">a</span><span class="lower g">g<span class="annotation bottom left"><span>Baskerville has a ball on the ‘g’ and an open loop.</span></span></span></span>
       <span class="segment"><span class="lower e">e</span><span class="lower b">b</span><span class="lower i">i</span></span>
       <span class="segment"><span class="upper C">C</span><span class="upper G">G</span><span class="upper A">A</span></span>
     </p>
