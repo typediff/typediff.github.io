@@ -8,7 +8,8 @@
 }
 
 body {
-  font-family: "Palatino", "Georgia", serif;
+  font-family: serif;
+  font-size: 16px;
   color: #0b0c0c;
   margin: 32px;
 }
@@ -30,9 +31,9 @@ h1 a:hover {
 
 .fontdiff {
   width: 100%;
-  height: 300px;
   position: relative;
   margin-top: 25px;
+  height: 300px;
 }
 
 .example {
@@ -63,53 +64,60 @@ h1 a:hover {
   display: inline;
 }
 
-.baskerville { font-family: "Baskerville"; }
-.times-new-roman { font-family: "Times New Roman"; }
+#annotations {
+  position: relative;
+  height: 100px;
+}
 
-.annotation {
+.annotations li {
   font-family: serif;
   font-size: 12px;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 102px;
-  height: 232px;
+  width: 105px;
+  height: 200px;
   vertical-align: bottom;
+  list-style: none;
 }
 
-.annotation span {
+.annotations span {
   position: absolute;
   bottom: 0;
   color: #0b0c0c;
+  z-index: 20;
 }
 
-.annotation.right {
+.annotations .right {
   border-right: 1px dotted #444;
 }
 
-.annotation.right span {
+.annotations .right span {
   text-align: right;
   padding-right: 5px;
 }
 
-.annotation.left {
+.annotations .left {
   border-left: 1px dotted #444;
 }
 
-.annotation.left span {
+.annotations .left span {
   text-align: left;
   padding-left: 5px;
 }
 
-.annotation.bottom {
-  height: 90px;
+.annotations .below {
+  bottom: 0;
 }
 
-.times-new-roman .S .annotation { left: 0; }
-.times-new-roman .G .annotation { left: 800px; }
-.baskerville .g .annotation { left: 247px; }
-.baskerville .J .annotation { left: 962px; }
-
+.annotations li.times-new-roman.S { left: 0; height: 282px; }
+.annotations li.baskerville.g { left: 247px; height: 128px; }
+.annotations li.baskerville.C { left: 546px; height: 182px; }
+.annotations li.baskerville.E { left: 688px; width: 120px; height: 182px; }
+.annotations li.baskerville.G { left: 848px; height: 192px; }
+.annotations li.times-new-roman.G { left: 848px; bottom: 80px; height: 0;}
+.annotations li.baskerville.J { left: 980px; height: 128px;}
+.annotations li.baskerville.Q { left: 1160px; height: 128px; width: 122px; }
 
 .key {
   float: right;
@@ -121,56 +129,88 @@ h1 a:hover {
   padding-left: 12px;
 }
 
+#footer {
+  clear: both;
+  font-size: 12px;
+  margin-top: 5em;
+  line-height: 4em;
+  border-top: 1px dotted #888;
+}
+
+.baskerville { font-family: "Baskerville"; }
+.times-new-roman { font-family: "Times New Roman"; }
+
 </style>
 <body>
-<table class="key">
-  <tbody>
-    <tr><td class="first baskerville">Sage CEGJQ</td><td class="name">Baskerville</td></tr>
-    <tr><td class="second times-new-roman">Sage CEGJQ</td><td class="name">Times New Roman</td></tr>
-  </tbody>
-</table>
+<div id="header">
+  <table class="key">
+    <tbody>
+      <tr><td class="first baskerville">Sage CEGJQ</td><td class="name">Baskerville</td></tr>
+      <tr><td class="second times-new-roman">Sage CEGJQ</td><td class="name">Times New Roman</td></tr>
+    </tbody>
+  </table>
 
-<h1>
-  <a href="https://en.wikipedia.org/wiki/Baskerville">Baskerville</a>
-  vs
-  <a href="https://en.wikipedia.org/wiki/Times_New_Roman">Times New Roman</a>
-</h1>
+  <h1>
+    <a href="https://en.wikipedia.org/wiki/Baskerville">Baskerville</a>
+    vs
+    <a href="https://en.wikipedia.org/wiki/Times_New_Roman">Times New Roman</a>
+  </h1>
+</div>
 
-<div class="fontdiff">
-  <div class="baskerville first example">
-    <p class="text">
-      <span class="segment"><!--
-      --><span class="upper S">S</span><!--
-      --><span class="lower a">a</span><!--
-      --><span class="lower g">g<span class="annotation bottom left"><span>Baskerville has a ball on the ‘g’ and an open loop.</span></span></span><!--
-      --><span class="lower e">e</span><!--
-   --></span>
-      <span class="segment"><!--
-      --><span class="upper C">C</span><!--
-      --><span class="upper E">E</span><!--
-      --><span class="upper G">G</span><!--
-      --><span class="upper J">J<span class="annotation bottom left"><span>Baskerville's ‘J’ descends below the <a href="https://en.wikipedia.org/wiki/Baseline_(typography)">baseline</a>.</span></span></span><!--
-      --><span class="upper Q">Q</span><!--
-   --></span>
-    </p>
+<div id="main">
+  <div class="fontdiff">
+    <div class="baskerville first example">
+      <p class="text">
+        <span class="segment"><!--
+        --><span class="upper S">S</span><!--
+        --><span class="lower a">a</span><!--
+        --><span class="lower g">g</span><!--
+        --><span class="lower e">e</span><!--
+      --></span>
+        <span class="segment"><!--
+        --><span class="upper C">C</span><!--
+        --><span class="upper E">E</span><!--
+        --><span class="upper G">G</span><!--
+        --><span class="upper J">J</span><!--
+        --><span class="upper Q">Q</span><!--
+      --></span>
+      </p>
+    </div>
+
+    <div class="times-new-roman second example">
+      <p class="text">
+        <span class="segment"><!--
+        --><span class="upper S">S</span><!--
+        --><span class="lower a">a</span><!--
+        --><span class="lower g">g</span><!--
+        --><span class="lower e">e</span><!--
+      --></span>
+        <span class="segment"><!--
+        --><span class="upper C">C</span><!--
+        --><span class="upper E">E</span><!--
+        --><span class="upper G">G</span><!--
+        --><span class="upper J">J</span><!--
+        --><span class="upper Q">Q</span><!--
+      --></span>
+      </p>
+    </div>
   </div>
-  <div class="times-new-roman second example">
-    <p class="text">
-      <span class="segment"><!--
-      --><span class="upper S">S<span class="annotation top right"><span>Time's serifs are sharp, and long in length.</span></span></span><!--
-      --><span class="lower a">a</span><!--
-      --><span class="lower g">g</span><!--
-      --><span class="lower e">e</span><!--
-   --></span>
-      <span class="segment"><!--
-      --><span class="upper C">C</span><!--
-      --><span class="upper E">E</span><!--
-      --><span class="upper G">G<span class="annotation bottom right"><span>The vertical stroke in Times's ‘G’ is unusually long.</span></span></span><!--
-      --><span class="upper J">J</span><!--
-      --><span class="upper Q">Q</span><!--
-    --></span>
-    </p>
+
+  <div id="annotations">
+    <ol class="annotations">
+      <li class="S times-new-roman right"><span>Time's serifs are sharp and long.</span></li>
+      <li class="g baskerville left"><span>Baskerville has a ball on the ‘g’ and an open loop.</span></li>
+      <li class="C baskerville right"><span>Baskerville is one of the few typefaces with a serif on the bottom of it's ‘C’.</span></li>
+      <li class="E baskerville right"><span>Baskerville's bottom horizontal stroke is much longer than the upper strokes, giving it a kind of underbite.</span></li>
+      <li class="G baskerville right"><span>The vertical stroke in Baskerville's ‘G’ is relatively short.</span></li>
+      <li class="G times-new-roman right"><span>The vertical stroke in Times's ‘G’ is unusually long.</span></li>
+      <li class="J baskerville left"><span>Baskerville's ‘J’ descends below the <a href="https://en.wikipedia.org/wiki/Baseline_(typography)">baseline</a>.</span></li>
+      <li class="Q baskerville right"><span>Baskerville has a very decorative, swashy tail on its ‘Q’</span></li>
+    </ol>
   </div>
+</div>
+<div id="footer">
+  <p>Source code is available from <a href="https://github.com/fontdiff">github.com/fontdiff</a>.</p>
 </div>
 </body>
 </html>
