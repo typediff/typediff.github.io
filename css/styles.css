@@ -1,0 +1,128 @@
+---
+---
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: serif;
+  font-size: 16px;
+  color: #0b0c0c;
+  margin: 32px;
+}
+
+h1 {
+  font-weight: lighter;
+  color: #444;
+  word-spacing: 0.2em;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #444;
+}
+
+h1 a:hover {
+  color: #3F9DD7;
+}
+
+.fontdiff {
+  width: 100%;
+  position: relative;
+  margin-top: 25px;
+  height: 300px;
+}
+
+.example {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 350px;
+  font-size: 232px;
+}
+
+.first {
+  color: #2FAfff;
+}
+
+.second {
+  color: #909090;
+  opacity: 0.75;
+  z-index: 10;
+}
+
+.example .segment {
+  width: 232px;
+  display: inline;
+}
+
+.example .segment span {
+  display: inline;
+}
+
+#annotations {
+  position: relative;
+  height: 100px;
+}
+
+.annotations li {
+  font-family: serif;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 105px;
+  height: 200px;
+  vertical-align: bottom;
+  list-style: none;
+}
+
+.annotations span {
+  position: absolute;
+  bottom: 0;
+  color: #0b0c0c;
+  z-index: 20;
+}
+
+.annotations .right {
+  border-right: 1px dotted #444;
+}
+
+.annotations .right span {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.annotations .left {
+  border-left: 1px dotted #444;
+}
+
+.annotations .left span {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.annotations .below {
+  bottom: 0;
+}
+
+.key {
+  float: right;
+  font-size: 16px;
+}
+
+.key .name {
+  font-size: 12px;
+  padding-left: 12px;
+}
+
+#footer {
+  clear: both;
+  font-size: 12px;
+  margin-top: 5em;
+  line-height: 4em;
+  border-top: 1px dotted #888;
+}

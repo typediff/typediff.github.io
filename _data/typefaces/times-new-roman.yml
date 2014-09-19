@@ -1,0 +1,16 @@
+id: times-new-roman
+name: Times New Roman
+text: Sage CEGJQ
+url: https://en.wikipedia.org/wiki/Times_New_Roman
+notes:
+  - glyph: S
+    side: right
+    left: 0
+    height: 202
+    text: Time's serifs are sharp and long.
+
+  - glyph: G
+    side: right
+    left: 848
+    height: 0
+    text: The vertical stroke in Times's ‘G’ is unusually long.

@@ -1,0 +1,8 @@
+.{{ t.id }} { font-family: "{{ t.name }}"; }
+{% for note in t.notes %}
+.annotations li.{{ t.id }}.{{ note.glyph}} {
+  left: {{ note.left }}px;
+  height: {{ note.height }}px;
+  bottom: {{ bottom }}px;
+}
+{% endfor %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+{% assign t1 = site.data.typefaces[page.example1] %}
+{% assign t2 = site.data.typefaces[page.example2] %}
+<style>
+{% assign t = t1 %}{% assign bottom = 0  %}{% include notes.css %}
+{% assign t = t2 %}{% assign bottom = 80 %}{% include notes.css %}
+</style>
+</head>
+<body>
+<div id="header">
+{% include key.html %}
+  <h1><a href="{{ t1.url }}">{{ t1.name }}</a> vs <a href="{{ t2.url }}">{{ t2.name }}</a></h1>
+</div>
+<div id="main">
+<div class="fontdiff">
+  <div class="first example {{ t1.id }}">
+      <p class="text">{{ t1.text }}</p>
+  </div>
+  <div class="second example {{ t2.id }}">
+      <p class="text">{{ t2.text }}</p>
+  </div>
+</div>
+<div id="annotations">
+  <ol class="annotations">
+{% assign t = t1 %}{% include notes.html %}
+{% assign t = t2 %}{% include notes.html %}
+  </ol>
+</div>
+</div>
+{% include footer.html %}
+</body>
+</html>
