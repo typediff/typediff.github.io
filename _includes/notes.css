@@ -2,7 +2,7 @@
 {% for note in include.t.notes %}
 .annotations li.{{ include.t.id }}.{{ note.glyph}} {
   left: {{ note.left }}px;
-  height: {{ note.height }}px;
+  height: {{ note.height | plus:include.height }}px;
   bottom: {{ include.bottom }}px;
 }
 {% endfor %}

@@ -6,35 +6,35 @@ notes:
   - glyph: g
     side: left
     left: 247
-    height: 128
+    height: 52
     text: Baskerville has a ball on the ‘g’ and an open loop.
 
   - glyph: C
     side: right
     left: 546
-    height: 182
+    height: 102
     text: Baskerville is one of the few typefaces with a serif on the bottom of it's ‘C’.
 
   - glyph: E
     side: right
     left: 688
-    height: 182
+    height: 102
     text: Baskerville's bottom horizontal stroke is much longer than the upper strokes, giving it a kind of underbite.
 
   - glyph: G
     side: right
     left: 848
-    height: 192
+    height: 112
     text: The vertical stroke in Baskerville's ‘G’ is relatively short.
 
   - glyph: J
     side: left
     left: 980
-    height: 128
+    height: 52
     text: Baskerville's ‘J’ descends below the <a href="https://en.wikipedia.org/wiki/Baseline_(typography)">baseline</a>.
 
   - glyph: Q
     side: right
     left: 1160
-    height: 128
+    height: 48
     text: Baskerville has a very decorative, swashy tail on its ‘Q’.
