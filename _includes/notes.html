@@ -1,3 +1,3 @@
-{% for note in t.notes %}
-  <li class="{{ note.glyph }} {{ t.id }} {{ note.side }}"><span>{{ note.text }}</span></li>
+{% for note in include.t.notes %}
+  <li class="{{ note.glyph }} {{ include.t.id }} {{ note.side }}"><span>{{ note.text }}</span></li>
 {% endfor %}
