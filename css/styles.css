@@ -123,3 +123,15 @@ h1 a:hover {
   line-height: 4em;
   border-top: 1px dotted #888;
 }
+
+#footer ul {
+  clear: both;
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+#footer li {
+  display: inline;
+  margin-left: 0;
+  margin-right: 1.25em;
+}
