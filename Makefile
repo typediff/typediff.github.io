@@ -1,5 +1,5 @@
 ICONS=\
-	favicon.ico
+	favicon.ico\
 
 all:	content
 
@@ -21,4 +21,4 @@ serve:	content
 	jekyll serve --baseurl '' --watch
 
 clean::
-	rm -rf _site
+	rm -rf _site favicon.ico
