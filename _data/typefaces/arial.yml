@@ -1,0 +1,10 @@
+id: arial
+name: Arial
+text: Sage CEGJQ
+url: https://en.wikipedia.org/wiki/Arial
+notes:
+  - glyph: G
+    side: right
+    left: 980
+    height: 90
+    text: Arial's ‘G’ does not have a spur.
