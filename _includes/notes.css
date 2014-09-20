@@ -1,4 +1,9 @@
 .{{ include.t.id }} { font-family: "{{ include.t.name }}"; }
+
+.{{ include.t.id }}.example {
+  font-size: {{ include.t.font-size }}px;
+  line-height: {{ include.t.line-height }}px;
+}
 {% for note in include.t.notes %}
 .annotations li.{{ include.t.id }}.{{ note.glyph}} {
   left: {{ note.left }}px;

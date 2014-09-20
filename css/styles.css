@@ -113,12 +113,17 @@ h1 a:hover {
 
 .key {
   float: right;
-  font-size: 16px;
 }
 
 .key .name {
   font-size: 12px;
+  line-height: 16px;
   padding-left: 12px;
+}
+
+.key td {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 #footer {

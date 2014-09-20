@@ -2,6 +2,8 @@ id: baskerville
 name: Baskerville
 text: Sage CEGJQ
 url: https://en.wikipedia.org/wiki/Baskerville
+font-size: 232
+line-height: 232
 notes:
   - glyph: g
     side: left

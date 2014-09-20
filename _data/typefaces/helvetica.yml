@@ -2,9 +2,11 @@ id: helvetica
 name: Helvetica
 text: Sage CEGJQ
 url: https://en.wikipedia.org/wiki/Helvetica
+font-size: 205
+line-height: 268
 notes:
   - glyph: G
     side: right
-    left: 980
+    left: 848
     height: 90
     text: Helvetica has a bearded ‘G’.

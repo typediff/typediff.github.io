@@ -2,9 +2,11 @@ id: arial
 name: Arial
 text: Sage CEGJQ
 url: https://en.wikipedia.org/wiki/Arial
+font-size: 205
+line-height: 268
 notes:
   - glyph: G
     side: right
-    left: 980
+    left: 848
     height: 90
     text: Arial's ‘G’ does not have a spur.
