@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+{% assign t = site.data.typefaces[page.example] %}
+<style>
+{% include notes.css t=t bottom=0 height=80 %}
+</style>
+</head>
+<body>
+<div id="header">
+  <h1><a href="{{ t.url }}">{{ t.name }}</a></h1>
+</div>
+<div id="main">
+<div class="fontdiff">
+  <div class="single example {{ t.id }}">
+      <p class="text">{{ t.text }}</p>
+  </div>
+</div>
+<div id="annotations">
+  <ol class="annotations">
+{% include notes.html t=t %}
+  </ol>
+</div>
+</div>
+{% include footer.html %}
+</body>
+</html>
