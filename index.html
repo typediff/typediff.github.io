@@ -4,7 +4,8 @@ title: Index
 ---
 
 <ol>
-{% for p in site.pages %}{% if p.layout == 'vs' %}
+{% assign pages = site.pages | sort:"title" %}
+{% for p in pages %}{% if p.layout == 'vs' %}
   <li><a href="{{ p.url }}">{{ p.title }}</a>
 {% endif %}{% endfor %}
 </ol>
