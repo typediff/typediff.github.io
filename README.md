@@ -1,3 +1,3 @@
-# fontdiff.com
+# typediff.org
 
-This repository holds the website for http://fontdiff.com pull requests welcome!
+This repository holds the website for http://typediff.org pull requests welcome!
