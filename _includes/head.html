@@ -3,4 +3,4 @@
 <link href="{{ site.baseurl }}/css/styles.css" rel="stylesheet">
 <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}">
 <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-<title>{{ page.title }} on {{ site.title }}</title>
+<title>{% if page.title %}{{ page.title }} on {% endif %}{{ site.title }}</title>
