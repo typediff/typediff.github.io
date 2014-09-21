@@ -1,5 +1,6 @@
 ICONS=\
 	favicon.ico\
+	images/favicon.png
 
 all:	content
 
@@ -14,6 +15,9 @@ favicon.ico:	images/icon.svg
 		\( -clone 0 -resize 64x64 \) \
 		-delete 0 -alpha off -colors 256 $@
 
+images/favicon.png:	images/icon.svg
+	convert $? $@
+
 init::
 	gem install jekyll
 
@@ -21,4 +25,4 @@ serve:	content
 	jekyll serve --baseurl '' --watch
 
 clean::
-	rm -rf _site favicon.ico
+	rm -rf _site $(ICONS)

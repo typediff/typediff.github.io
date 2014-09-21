@@ -1,7 +1,7 @@
 # Site settings
-title: "fontdiff"
+title: "typediff"
 description: ""
-baseurl: "http://fontdiff.com"
+baseurl: "http://typediff.org"
 url: "localhost:4000"
 
 # Build settings
