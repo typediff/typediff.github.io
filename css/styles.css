@@ -126,6 +126,10 @@ h1 a:hover {
   line-height: 20px;
 }
 
+.index {
+  margin: 3em 0;
+}
+
 #footer {
   clear: both;
   font-size: 12px;

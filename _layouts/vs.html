@@ -17,7 +17,10 @@
     <tr><td class="second {{ t2.id }}">{{ t2.text }}</td><td class="name">{{ t2.name }}</td></tr>
   </tbody>
 </table>
-  <h1><a href="/">Fontdiff</a>: <a href="{{ t1.url }}">{{ t1.name }}</a> vs <a href="{{ t2.url }}">{{ t2.name }}</a></h1>
+  <h1>
+    <a href="{{ site.url }}/">{{ site.title }}</a>:
+    <a href="{{ t1.url }}">{{ t1.name }}</a> vs <a href="{{ t2.url }}">{{ t2.name }}</a>
+  </h1>
 </div>
 <div id="main">
 <div class="typediff">

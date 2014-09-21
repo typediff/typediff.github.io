@@ -1,11 +1,19 @@
 ---
 layout: default
-title: Index
+title: Home page
 ---
 
-<ol>
+<div id="header">
+<h1><a href="{{ site.url }}/">{{ site.title }}</a>: compare and contrast typefaces</h1>
+</div>
+
+<div id="main">
+<div class="index">
+<ul>
 {% assign pages = site.pages | sort:"title" %}
 {% for p in pages %}{% if p.layout == 'vs' or p.layout == 'typeface' %}
   <li><a href="{{ p.url }}">{{ p.title }}</a>
 {% endif %}{% endfor %}
-</ol>
+</ul>
+</div>
+</div>

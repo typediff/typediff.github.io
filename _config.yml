@@ -1,6 +1,6 @@
 # Site settings
-title: "typediff"
-description: ""
+title: "Typediff"
+description: "Compare and contrast typefaces"
 baseurl: "http://typediff.org"
 url: "localhost:4000"
 
