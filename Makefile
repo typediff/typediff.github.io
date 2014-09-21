@@ -1,6 +1,6 @@
 ICONS=\
 	favicon.ico\
-	images/favicon.png
+	images/icon.png
 
 all:	content
 
@@ -15,7 +15,7 @@ favicon.ico:	images/icon.svg
 		\( -clone 0 -resize 64x64 \) \
 		-delete 0 -alpha off -colors 256 $@
 
-images/favicon.png:	images/icon.svg
+images/icon.png:	images/icon.svg
 	convert $? $@
 
 init::
