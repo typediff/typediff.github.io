@@ -42,10 +42,7 @@ h1 a:hover {
   white-space: nowrap;
 }
 
-.single {
-  color: #b82828;
-}
-
+.single,
 .first {
   color: #2FAfff;
 }
